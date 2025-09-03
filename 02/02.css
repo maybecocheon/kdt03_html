@@ -1,12 +1,65 @@
-body {
-    background-color: grey;
+* {
+    padding: 0px;
+    margin: 0px;
 }
 
+body {
+    background-color: rgb(243, 243, 255);
+}
+
+header, main, footer {
+    width: 80%;
+    margin-left: 10%;
+    padding: 20px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    width: 80%;
+    padding: 20px;
+}
+
+section {
+    width: 30%;
+}
+
+/*  
 h2 {
-    color: blue;
-    background-color: rgb(240, 252, 216);
+    color: rgb(69, 69, 255);
+    background-color: rgb(199, 203, 255);
 }
 
 p {
+    color: black;
+}
+
+.s1 {
+    background-color: white;
+}
+
+.s2 {
+    background-color: antiquewhite;
+}
+
+#a1 {
+    background-color:cornsilk;
+}
+
+id가 class보다 우선순위 높음
+class는 앞에 점, id는 앞에 샵 붙여서 표현하기
+
+article > p {
+    color: rgb(168, 168, 168);
+}
+
+footer {
+    background-color: black;
+}
+
+footer li {
     color: white;
 }
+
+바로 아래 태그면 > 부등호 쓰고 아니면 안 씀 */
