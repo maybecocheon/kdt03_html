@@ -9,7 +9,7 @@
         }
     </style> 내부 스타일 -->
     <!-- 외부 스타일 -->
-    <link rel="stylesheet" href="./02.css">
+    <link rel="stylesheet" href="./02원본.css">
     <!-- 구글 폰트 -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +18,13 @@
     <!-- <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=home" /> -->
     <!-- awesome 아이콘 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <!-- CSS 적용 예제 -->
 
 <body>
     <header>
         <nav>
-            <div>AI 빅데이터분석 풀스택서비스 SW 개발자 양성과정</div>
             <ul>
                 <li><a href="#h2Html">HTML</a></li>
                 <li><a href="#h2Css">CSS</a></li>
@@ -50,13 +47,16 @@
 
     <main>
         <article class="s1" id="a1">
+            <hr>
             <h1>
                 프론트엔드
                 FrontEnd
             </h1>
-            <p>웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다. 프론트엔드쪽에서는 주로 <span>HTML, CSS, 자바스크립트</span>가 쓰이며, 요즘은 페이스북에서 개발한
+
+            <p>웹에서 사용자에게 시각적으로 보여지는 부분을 의미한다. <br> 프론트엔드쪽에서는 주로 <span>HTML, CSS, 자바스크립트</span>가 쓰이며, 요즘은 페이스북에서 개발한
                 자바스크립트에서 파생된 싱글 페이지 애플리케이션
                 형태의 리액트가 많이 사용된다.</p>
+            <hr>
         </article>
         <!--span: 눈에 보이지 않는 상자를 만들어서 하나의 섹션(블록)처럼 묶어 줌(인라인 형식)
     div: 눈에 보이지 않는 상자를 만들어서 하나의 섹션(블록)처럼 묶어 줌(문단으로 묶어서 div 뒤에 줄 바꿈 됨)
@@ -66,46 +66,32 @@
         <section class="s1">
             <!-- 속성 스타일 <h2 id="h2Html" style="color: blue">HTML</h2> -->
             <h2 id="h2Html">HTML</h2>
-            <div>
-                <img src="../img/html.png" />
-
-                <!--img 태그는 무조건 속성(src)을 가짐,
+            <img src="../img/html.png" />
+            <!--img 태그는 무조건 속성(src)을 가짐,
         절대 경로는 절대 쓰면 안 됨
         ./(현재폴더)(생략 가능);
         ../(상위폴더);
         여러 번 올라가고 싶을 때는 ../../(상위폴더)-->
-                <p><span>HTML(HyperText Markup Language)</span>은 웹을 이루는 가장 기초적인 구성 요소로, 웹 콘텐츠의 의미와 구조를 정의할 때 사용</p>
-            </div>
+            <p><span>HTML(HyperText Markup Language)</span>은 웹을 이루는 가장 기초적인 구성 요소로, 웹 콘텐츠의 의미와 구조를 정의할 때 사용</p>
         </section>
 
         <section class="s2">
-
             <h2 id="h2Css">CSS</h2>
-            <div>
-                <img src="../img/css.png" />
-
-                <p><span>Cascading Style Sheets(CSS)</span>는 HTML이나 XML(XML의 방언인 SVG, XHTML 포함)로 작성된 문서의 표시 방법을 기술하기 위한
-                    스타일
-                    시트 언어</p>
-            </div>
+            <img src="../img/css.png" />
+            <p><span>Cascading Style Sheets(CSS)</span>는 HTML이나 XML(XML의 방언인 SVG, XHTML 포함)로 작성된 문서의 표시 방법을 기술하기 위한 스타일
+                시트 언어</p>
         </section>
 
         <section class="s1">
-
             <h2 id="h2JS">JavaScript</h2>
-            <div>
-                <img src="../img/js.png" />
-
-                <p>웹 페이지를 위한 스크립트 언어로 가벼운, 인터프리터 혹은 <span>just-in-time 컴파일 프로그래밍 언어</span>로, 일급 함수를 지원</p>
-            </div>
+            <img src="../img/js.png" />
+            <p>웹 페이지를 위한 스크립트 언어로 가벼운, 인터프리터 혹은 <span>just-in-time 컴파일 프로그래밍 언어</span>로, 일급 함수를 지원</p>
         </section>
 
         <section class="s2">
             <h2 id="h2React">React</h2>
-            <div>
-                <img src="../img/react.png" />
-                <p>사용자 인터페이스를 만들기 위한 <span>JavaScript</span> 라이브러리</p>
-            </div>
+            <img src="../img/react.png" />
+            <p>사용자 인터페이스를 만들기 위한 <span>JavaScript</span> 라이브러리</p>
         </section>
     </main>
 

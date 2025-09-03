@@ -8,31 +8,19 @@ body {
     background-color: rgb(243, 243, 255);
 }
 
-header, main, footer {
+header,
+main,
+footer {
     width: 80%;
     margin-left: 10%;
     padding: 20px;
     /* text-align: center; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
 
-nav div {
-    font-size: 40px;
-
-    width: 100%;
-    padding-top: 20px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul {
+ul {
     width: 100%;
     height: 150px;
 
@@ -40,8 +28,10 @@ nav ul {
 
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: center;
     align-items: center;
+
+    border: 5px solid;
 }
 
 /* li {
@@ -56,7 +46,7 @@ i {
 
 a {
     display: inline-block;
-    width: 100%;
+    width: 100px;
     height: 20px;
     padding: 10px;
     margin: 5px;
@@ -80,51 +70,30 @@ a:hover {
 article {
     width: 80%;
     padding: 20px;
-    font-size: x-large;
 }
 
 article p {
     font-weight: 400;
-    font-size: 20px;
+    font-size: 18px;
 }
 
-h1 {
-    margin-bottom: 20px;
-    text-align: center;
+section.s1 {
+    width: 500px;
+    border: 5px solid;
+    padding: 25px;
+    margin: 15px;
 }
 
-section {
-    background-color: white;
-
-    width: 80%;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 10px;
-    border: 3px solid;
-    border-color: rgb(209, 140, 209);
+section.s2 {
+    width: 500px;
+    border: 5px solid;
+    padding: 25px;
+    margin: 15px;
+    box-sizing: border-box;
 }
 
-h2 {
-    margin: 10px;
-}
-
-img {
-    margin-right: 50px;
-    margin-left: 50px;
-    border-radius: 100px;
-}
-
-section div {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-}
-
-section p {
-    font-size: large;
-}
+/* 박스 사이징 쓰면 패딩, 마진, 콘텐츠, 보더 영역 다 합쳐서 넓이를 따지게 됨
+안 쓰면 콘텐츠 영역만 넓이를 따짐 */
 
 footer {
     background-color: black;
@@ -142,24 +111,48 @@ span {
 
     header, main, footer {
         width: 100%;
-        margin-left: 0px;
         padding: 20px;
-        /* text-align: center;*/
+        /* text-align: center; */
         display: flex;
         flex-direction: column;
     }
-
-    
-} 
-
-footer ul {
-    width: 100%;
-    height: 100%;
-
-    list-style: none;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
+
+/*  
+h2 {
+    color: rgb(69, 69, 255);
+    background-color: rgb(199, 203, 255);
+}
+
+p {
+    color: black;
+}
+
+.s1 {
+    background-color: white;
+}
+
+.s2 {
+    background-color: antiquewhite;
+}
+
+#a1 {
+    background-color:cornsilk;
+}
+
+id가 class보다 우선순위 높음
+class는 앞에 점, id는 앞에 샵 붙여서 표현하기
+
+article > p {
+    color: rgb(168, 168, 168);
+}
+
+footer {
+    background-color: black;
+}
+
+footer li {
+    color: white;
+}
+
+바로 아래 태그면 > 부등호 쓰고 아니면 안 씀 */
