@@ -20,16 +20,18 @@ header, main, footer {
     flex-wrap: wrap;
 }
 
+nav {
+    width: 100%;
+}
 nav div {
     font-size: 40px;
 
     width: 100%;
-    padding-top: 20px;
+    padding: 20px;
 
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    border-style: solid;
+
+    text-align: center;
 }
 
 nav ul {
@@ -40,15 +42,15 @@ nav ul {
 
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: end;
     align-items: center;
 }
 
-/* li {
-    display: inline;
+nav li {
+    margin-right: 30px;
 }
     
-인라인 요소로 바뀌어서 목록 옆으로 제시됨 */
+/* 인라인 요소로 바뀌어서 목록 옆으로 제시됨 */
 
 i {
     font-size: x-large;
@@ -86,6 +88,10 @@ article {
 article p {
     font-weight: 400;
     font-size: 20px;
+}
+
+hr {
+    
 }
 
 h1 {

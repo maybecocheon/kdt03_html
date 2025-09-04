@@ -1,0 +1,86 @@
+body {
+    /* width: 100vw;
+    height: 100vh; */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(243, 243, 255);
+}
+
+header, main, footer {
+    width: 800px;
+    background-color: rgb(255, 255, 255);
+
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+
+    box-shadow: 0 3px 5px 0 grey;
+}
+
+header {
+    background-color: rgb(0, 0, 0);
+
+    margin: 25px;
+}
+
+header > h1 {
+    text-align: center;
+    color: grey
+}
+
+header span {
+    color: white;
+}
+
+ul {
+    list-style: none;
+}
+
+main li {
+    border-bottom: 1px solid purple;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+main li:hover {
+    background-color: rgb(226, 226, 226);
+}
+
+main a{
+    color: black;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+
+}
+
+footer li {
+    margin: 5px 10px;
+}
+/* 시계 방향으로 마진 크기 정할 수 있음 (상 우 하 좌) */
+
+a {
+    text-decoration: none;
+}
+
+footer a {
+    display: inline-flex;
+    background-color: black;
+    color: white;
+
+    border-radius: 10px;
+    padding: 10px 20px;
+}
+
+/* 플렉스 박스로 지정해야 넓이, 높이 지정할 수 있음 */
+
+footer a:hover {
+    background-color: grey;
+}
