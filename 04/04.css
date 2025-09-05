@@ -1,0 +1,17 @@
+.inputDiv {
+margin-bottom: 40px;
+}
+
+input[type=text] {
+    padding: 8px;
+}
+
+/* text에 쌍따옴표 넣어도 되고 안 넣어도 되고 */
+
+input[readonly] {
+    background-color: rgb(216, 216, 216);
+}
+
+/* 대괄호 안에는 input의 속성이 들어갈 수 있음
+속성별로 css 적용 가능 */
+
