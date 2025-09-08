@@ -1,88 +1,41 @@
-//리터럴 표기법
-let arr1 = [1, 2, 3] ;
+//오브젝트 (객체) 생성
+let obj = {'오렌지': '🍊'};
 
-//Array 생성자를 이용
-let arr2 = new Array(1, 2, 3);
-let arr3 = new Array(3); // 요소 없이 비어 있는 3칸의 배열 생성
+//오브젝트에 자료 추가
+obj['사과'] = '🍎';
+obj['바나나'] = '🍌'
+console.log(obj);
 
-//배열 크기
-console.log(arr1);
-console.log(`arr1: ${arr1}`);
-console.log(`arr1의 요소 개수: ${arr1.length}`);
-console.log(`arr2의 요소 개수: ${arr2.length}`);
-console.log(`arr3의 요소 개수: ${arr3.length}`);
+// 오브젝트 자료 수정 (오브젝트 안에 해당 키가 있었으면 수정)
+obj['사과'] = '🍏';
+console.log(obj);
 
-//배열 요소 제거
-console.log(arr2);
-arr2.length = 0;
-console.log(arr2);
+// 오브젝트 자료 삭제
+delete obj['사과'];
+console.log(obj);
 
-console.log(arr3);
-arr3 = [];
-console.log(arr3);
-
-//배열요소 추가
-console.log(arr1);
-arr1.push('가');
-console.log(arr1);
-//arr1.pop('가');
-let arr1pop = arr1.pop();
-console.log(arr1, typeof(arr1));
-console.log(arr1pop, typeof(arr1pop));
-
-//배열의 순회
-//1.
-for (let i = 0; i < arr1.length; i++){
-    console.log(arr1[i]);
+// keys, values, entries의 결과는 array다. 따라서 배열의 함수를 쓸 수 있다.
+// 키만 추출
+// => 값을 추출하려면 따로 obj[k]로써 정의를 해야 함, k, v 등 따로 변수를 선언하여 활용할 수 없음
+console.log(Object.keys(obj));
+for (let k of Object.keys(obj)) {
+    console.log(k, obj[k]);
 }
 
-//2. key(index)값 가져오기
-for (let i in arr1){
-    console.log(arr1[i]);
+// 값만 추출
+console.log(Object.values(obj));
+for (let v of Object.values(obj)) {
+    console.log(v);
 }
 
-//3. value 값 가져오기
-for (let item of arr1){
-    console.log(item);
+// 키와 값 추출 => array의 array로 값이 추출됨, 배열 안에 배열이 들어감, 2차원 배열이랑 비슷하긴 한데...
+console.log(Object.entries(obj))
+for (let [k,v] of Object.entries(obj)) {
+    console.log(k, v);
 }
 
-//4. foreach 메서드
-arr1.forEach((item) => {
-    console.log(item)
-}); //foreach 인수 안에 함수가 들어감
+// 전개연산자 (obj가 먼저 있으면 obj 먼저 나열됨)
+let obj2 = {'수박': '🍉'};
+let obj3 = {...obj2, ...obj};
+console.log(obj3);
 
-//배열 map 메서드
-const arr4 = arr1.map((item) => {
-    return item * 2;
-})
-console.log(arr4);
-//return은 값을 받아서 되돌려줌
-// const arr4 = arr1.map(item => item * 2) 같은 의미임
-//콜백함수는 파라미터가 1개이면 ()가 생략 가능
-//return문만 있으면 {}와 return을 생략가능
-
-//콜백함수는 파라미터가 2개가 되면 인덱스를 가져옴
-const arr5 = arr1.map((item, i) => item * i)
-console.log(arr5);
-
-//filter
-const arr6 = arr1.filter((item) =>{
-    return item % 2 == 0
-})
-console.log(arr6);
-//const arr6 = arr1.filter(item => item % 2 == 0); 같은 의미임
-
-//map함수
-let arr7=[];
-for (let c of arr1){
-    arr7.push(c*2);
-}
-console.log(arr7);
-
-//filter함수
-let arr8=[];
-for (let c of arr1){
-    if (c%2==0){
-        arr8.push(c);
-}}
-console.log(arr8);
