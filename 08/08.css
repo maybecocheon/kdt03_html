@@ -1,0 +1,46 @@
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    width: 80%;
+    padding: 20px;
+    border: 1px solid gainsboro;
+}
+
+form div {
+    display: flex;
+    justify-content: center;
+    
+    width: 100%;
+}
+
+select {
+    width: 45%;
+    height: 30px;
+
+    margin: 20px;
+    padding: 5px;
+}
+
+.divIn {
+    height: 40px;
+    padding: 5px;
+
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.divIn label {
+    margin-right: 20px;
+}
+
+input[type="number"]{
+    height: 40px;
+}
+
+input[readonly] {
+    background-color: rgb(255, 250, 204);
+}
+
