@@ -1,0 +1,23 @@
+#sec1 {
+    margin-bottom: 100px;
+}
+
+#sec1 > img{
+    height: 150%;
+
+    border-radius: 10px;
+}
+
+#sec2 img{
+    height: 50%;
+
+    margin-top: 10px;
+    border-radius: 5px white;
+    box-sizing: border-box;
+    /* 박스 사이징으로 묶으면 마진, 보더도 하나의 콘텐츠 크기로 인식해서 border 배경색으로 지정한 뒤 호버 시 색 더하면 들어가는 것처럼 보임*/
+}
+
+#sec2 img:hover {
+    cursor: pointer;
+    border: 5px solid blue;
+}

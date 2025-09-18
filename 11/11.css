@@ -1,0 +1,22 @@
+#sec1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sec1 img{
+    width: 300px;
+    height: 300px;
+
+    border-radius: 10px;
+}
+
+#sec1 button{
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    font-size: 25px;
+    text-align: center;
+}
