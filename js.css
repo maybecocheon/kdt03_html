@@ -9,7 +9,7 @@ main {
 
 button, input[type=button], input[type=reset] {
     padding: 10px 15px;
-    margin: 5px 15px;
+    margin: 5px 5px;
     border-radius: 5px;
     border: 0px;
 
