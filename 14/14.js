@@ -3,7 +3,7 @@ const getData = (content) => {
     //인코딩한 txt1 값을 키워드에 넣기
     //let keyword = encodeURIComponent(txt1);
     let keyword = "%EB%B6%80%EC%82%B0%EC%97%AD";
-    let apikey = "3d89c9ace08395cf8e7611e34dfdb08d04cd76aa2a2df98adb7344bb61692531";
+    let apikey = "";
     let url = `https://apis.data.go.kr/B551011/PhotoGalleryService1/gallerySearchList1?`;
     url = `${url}serviceKey=${apikey}`;
     url = `${url}&numOfRows=10&pageNo=1&MobileOS=ETC&MobileApp=AppTest&arrange=A`;

@@ -1,0 +1,89 @@
+#boxMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+/* 메인 플렉스 박스 column으로 잡으면 안에 있는 요소들이 열로 나열됨*/
+
+#inDt{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#dt {
+    width: 50%;
+    padding: 5px;
+    margin: 5px;
+
+    font-weight: bold;
+}
+
+#content {
+    width: 800px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+#box {
+    width: 70%;
+}
+
+#poster {
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgb(191, 191, 191);
+}
+
+#poster img {
+    width: 80%;
+}
+
+.boxRank {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+
+    border-radius: 5px;
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 12px;
+}
+
+.boxUp, .boxDown, .boxSame {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 20px;
+
+    margin-left: 2px;
+    margin-right: 2px; 
+
+    font-size: 12px;
+}
+
+.boxUp {
+    color: red;
+}
+
+.boxDown{
+    color: blue;
+}
+
+.boxSame{
+    color: grey;
+}
